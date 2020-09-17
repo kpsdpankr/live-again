@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    background-image: linear-gradient(rgba(252, 5, 5, 0.37), rgba(69, 2, 255, 0.308)), url(./nature/night.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    b
+    transition: 0.8s ease;
+    position: relative;
+    overflow: hidden;
+}
+.block{
+    position: absolute;
+    background-color: rgba(245, 71, 8, 0.938);
+    width: 250px;
+    height: 100px;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+    transition: all 1s 0.3s, border-radius 0.1s;
+}
+.block:hover{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    border-radius: 15px;
+}
+.block h1{
+    padding: 10px;
+    color: rgb(243, 117, 159);
+    transition: all 1s;
+}
+.block h1:hover{
+    transform: translateX(60px);
+    color: rgb(255, 205, 205)
+}
+.menubar{
+    background-color: rgba(170, 204, 224, 0);
+    text-align: center;
+    font-family: sans-serif;
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    margin: 8px;
+    /* padding-top: 8px; */
+    padding: 8px;
+    width: 130px;
+    text-transform: capitalize;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.home, .menubar ul li:hover{
+    background: rgba(143, 73, 209, 0.534);
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.sub_menu, .sub_about, .sub_contact{
+    display: none;
+}
+.menubar ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    background: rgba(189, 186, 41, 0.527);
+    border-radius: 4px;
+}
+.menubar ul li:hover .sub_menu ul{
+    display: block;
+    margin: 8px;
+}
+.sub_menu ul li:hover{
+    border: 1px solid rgba(165, 47, 47, 0.932);
+    transition: all 0.4s;
+}
+.menubar ul li:hover .sub_about{
+    display: block;
+    position: absolute;
+    background:  rgba(189, 186, 41, 0.527);
+    border-radius: 4px;
+}
+.menubar ul li:hover .sub_about ul{
+    display: block;
+    margin: 8px;
+}
+.sub_about ul li:hover{
+    border: 1px solid rgba(165, 47, 47, 0.932);
+    transition: all 0.4s;
+}
+.menubar ul li:hover .sub_contact{
+    display: block;
+    position: absolute;
+    background: rgba(189, 186, 41, 0.527);
+    border-radius: 4px;
+}
+.menubar ul li:hover .sub_contact ul{
+    display: block;
+    margin: 8px;
+}
+.sub_contact ul li:hover{
+    border: 1px solid  rgba(165, 47, 47, 0.932);
+}
+
+
